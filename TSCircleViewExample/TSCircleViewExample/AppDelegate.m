@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  TSCircleViewExample
 //
-//  Created by Tomasz Szulc Prywatny on 16/07/14.
+//  Created by Tomasz Szulc  on 16/07/14.
 //  Copyright (c) 2014 Tomasz Szulc. All rights reserved.
 //
 

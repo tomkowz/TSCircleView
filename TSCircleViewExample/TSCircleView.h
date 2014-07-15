@@ -2,8 +2,9 @@
 //  TSAnimatedCircleView.h
 //  MKMapViewCircleScalingTest
 //
-//  Created by Tomasz Szulc Prywatny on 15/07/14.
+//  Created by Tomasz Szulc  on 15/07/14.
 //  Copyright (c) 2014 Tomasz Szulc. All rights reserved.
+//  http://github.com/tomkowz/TSCircleView
 //
 
 #import <MapKit/MapKit.h>
