@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Yo-6f-1uc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DH6-gj-fjF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="2l1-MC-emO"/>
+                                </connections>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="gEf-Y1-6OL">
+                                <rect key="frame" x="18" y="518" width="284" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="UoX-rM-3GG"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="gPu-0P-4v6"/>
+                                    <action selector="onSliderTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bNB-gj-W5t"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frt-lY-T98">
+                                <rect key="frame" x="20" y="480" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JQM-QG-XzD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-Hz-VId">
+                                <rect key="frame" x="68" y="480" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStopPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9bv-F9-PEW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-CO-K46">
+                                <rect key="frame" x="121" y="480" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPausePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZMX-bQ-YaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxC-Kk-kL7">
+                                <rect key="frame" x="184" y="480" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onResumePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ga6-RV-ciQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sj-ZN-zJj">
+                                <rect key="frame" x="20" y="446" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="frt-lY-T98" firstAttribute="leading" secondItem="6Yo-6f-1uc" secondAttribute="leading" constant="20" id="0in-IU-A6R"/>
+                            <constraint firstAttribute="centerX" secondItem="gEf-Y1-6OL" secondAttribute="centerX" id="5uH-BB-gIH"/>
+                            <constraint firstAttribute="centerY" secondItem="gEf-Y1-6OL" secondAttribute="centerY" constant="-249" id="B0P-eD-oEf"/>
+                            <constraint firstItem="4Hd-Hz-VId" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="460" id="DQ1-jD-Vku"/>
+                            <constraint firstItem="lxC-Kk-kL7" firstAttribute="leading" secondItem="dCw-CO-K46" secondAttribute="trailing" constant="20" id="KXm-jo-xJF"/>
+                            <constraint firstItem="dCw-CO-K46" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="460" id="OXR-7r-kQt"/>
+                            <constraint firstItem="dCw-CO-K46" firstAttribute="leading" secondItem="4Hd-Hz-VId" secondAttribute="trailing" constant="20" id="Q0N-YY-jJi"/>
+                            <constraint firstItem="4Hd-Hz-VId" firstAttribute="leading" secondItem="frt-lY-T98" secondAttribute="trailing" constant="15" id="V8E-a0-K0h"/>
+                            <constraint firstItem="frt-lY-T98" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="460" id="YZU-OS-FzS"/>
+                            <constraint firstItem="lxC-Kk-kL7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="460" id="xXh-yb-TYU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="DH6-gj-fjF" id="nhY-Ur-nXn"/>
+                        <outlet property="slider" destination="gEf-Y1-6OL" id="vH5-7u-YNG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

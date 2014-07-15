@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1262ED551975E0350039D2CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED541975E0350039D2CC /* Foundation.framework */; };
+		1262ED571975E0350039D2CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED561975E0350039D2CC /* CoreGraphics.framework */; };
+		1262ED591975E0350039D2CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED581975E0350039D2CC /* UIKit.framework */; };
+		1262ED5F1975E0350039D2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED5D1975E0350039D2CC /* InfoPlist.strings */; };
+		1262ED611975E0350039D2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED601975E0350039D2CC /* main.m */; };
+		1262ED651975E0350039D2CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED641975E0350039D2CC /* AppDelegate.m */; };
+		1262ED6B1975E0350039D2CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED6A1975E0350039D2CC /* ViewController.m */; };
+		1262ED6D1975E0350039D2CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED6C1975E0350039D2CC /* Images.xcassets */; };
+		1262ED741975E0350039D2CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED731975E0350039D2CC /* XCTest.framework */; };
+		1262ED751975E0350039D2CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED541975E0350039D2CC /* Foundation.framework */; };
+		1262ED761975E0350039D2CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1262ED581975E0350039D2CC /* UIKit.framework */; };
+		1262ED7E1975E0350039D2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED7C1975E0350039D2CC /* InfoPlist.strings */; };
+		1262ED801975E0350039D2CC /* TSCircleViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED7F1975E0350039D2CC /* TSCircleViewExampleTests.m */; };
+		1262ED8B1975E0A60039D2CC /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED8A1975E0A60039D2CC /* Annotation.m */; };
+		1262ED8F1975E0B60039D2CC /* TSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED8E1975E0B60039D2CC /* TSCircleView.m */; };
+		1262ED951975E0C80039D2CC /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED921975E0C80039D2CC /* CircleView.m */; };
+		1262ED961975E0C80039D2CC /* TSCustomCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED941975E0C80039D2CC /* TSCustomCircleView.m */; };
+		1262ED9C1975E1470039D2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED9A1975E1470039D2CC /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1262ED771975E0350039D2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1262ED491975E0350039D2CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1262ED501975E0350039D2CC;
+			remoteInfo = TSCircleViewExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1262ED511975E0350039D2CC /* TSCircleViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSCircleViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1262ED541975E0350039D2CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1262ED561975E0350039D2CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1262ED581975E0350039D2CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1262ED5C1975E0350039D2CC /* TSCircleViewExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSCircleViewExample-Info.plist"; sourceTree = "<group>"; };
+		1262ED5E1975E0350039D2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1262ED601975E0350039D2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1262ED621975E0350039D2CC /* TSCircleViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSCircleViewExample-Prefix.pch"; sourceTree = "<group>"; };
+		1262ED631975E0350039D2CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1262ED641975E0350039D2CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1262ED691975E0350039D2CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1262ED6A1975E0350039D2CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1262ED6C1975E0350039D2CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1262ED721975E0350039D2CC /* TSCircleViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSCircleViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1262ED731975E0350039D2CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1262ED7B1975E0350039D2CC /* TSCircleViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSCircleViewExampleTests-Info.plist"; sourceTree = "<group>"; };
+		1262ED7D1975E0350039D2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1262ED7F1975E0350039D2CC /* TSCircleViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCircleViewExampleTests.m; sourceTree = "<group>"; };
+		1262ED891975E0A60039D2CC /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		1262ED8A1975E0A60039D2CC /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		1262ED8D1975E0B60039D2CC /* TSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCircleView.h; path = Classes/TSCircleView.h; sourceTree = "<group>"; };
+		1262ED8E1975E0B60039D2CC /* TSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCircleView.m; path = Classes/TSCircleView.m; sourceTree = "<group>"; };
+		1262ED911975E0C80039D2CC /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleView.h; path = "Subclassing example/CircleView.h"; sourceTree = "<group>"; };
+		1262ED921975E0C80039D2CC /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleView.m; path = "Subclassing example/CircleView.m"; sourceTree = "<group>"; };
+		1262ED931975E0C80039D2CC /* TSCustomCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCustomCircleView.h; path = "Subclassing example/TSCustomCircleView.h"; sourceTree = "<group>"; };
+		1262ED941975E0C80039D2CC /* TSCustomCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCustomCircleView.m; path = "Subclassing example/TSCustomCircleView.m"; sourceTree = "<group>"; };
+		1262ED9B1975E1470039D2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1262ED4E1975E0350039D2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED571975E0350039D2CC /* CoreGraphics.framework in Frameworks */,
+				1262ED591975E0350039D2CC /* UIKit.framework in Frameworks */,
+				1262ED551975E0350039D2CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1262ED6F1975E0350039D2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED741975E0350039D2CC /* XCTest.framework in Frameworks */,
+				1262ED761975E0350039D2CC /* UIKit.framework in Frameworks */,
+				1262ED751975E0350039D2CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1262ED481975E0350039D2CC = {
+			isa = PBXGroup;
+			children = (
+				1262ED8C1975E0AD0039D2CC /* Classes */,
+				1262ED901975E0BB0039D2CC /* Subclassing example */,
+				1262ED5A1975E0350039D2CC /* TSCircleViewExample */,
+				1262ED791975E0350039D2CC /* TSCircleViewExampleTests */,
+				1262ED531975E0350039D2CC /* Frameworks */,
+				1262ED521975E0350039D2CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1262ED521975E0350039D2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED511975E0350039D2CC /* TSCircleViewExample.app */,
+				1262ED721975E0350039D2CC /* TSCircleViewExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1262ED531975E0350039D2CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED541975E0350039D2CC /* Foundation.framework */,
+				1262ED561975E0350039D2CC /* CoreGraphics.framework */,
+				1262ED581975E0350039D2CC /* UIKit.framework */,
+				1262ED731975E0350039D2CC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1262ED5A1975E0350039D2CC /* TSCircleViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED691975E0350039D2CC /* ViewController.h */,
+				1262ED6A1975E0350039D2CC /* ViewController.m */,
+				1262ED9A1975E1470039D2CC /* Main.storyboard */,
+				1262ED891975E0A60039D2CC /* Annotation.h */,
+				1262ED8A1975E0A60039D2CC /* Annotation.m */,
+				1262ED631975E0350039D2CC /* AppDelegate.h */,
+				1262ED641975E0350039D2CC /* AppDelegate.m */,
+				1262ED6C1975E0350039D2CC /* Images.xcassets */,
+				1262ED5B1975E0350039D2CC /* Supporting Files */,
+			);
+			path = TSCircleViewExample;
+			sourceTree = "<group>";
+		};
+		1262ED5B1975E0350039D2CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED5C1975E0350039D2CC /* TSCircleViewExample-Info.plist */,
+				1262ED5D1975E0350039D2CC /* InfoPlist.strings */,
+				1262ED601975E0350039D2CC /* main.m */,
+				1262ED621975E0350039D2CC /* TSCircleViewExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1262ED791975E0350039D2CC /* TSCircleViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED7F1975E0350039D2CC /* TSCircleViewExampleTests.m */,
+				1262ED7A1975E0350039D2CC /* Supporting Files */,
+			);
+			path = TSCircleViewExampleTests;
+			sourceTree = "<group>";
+		};
+		1262ED7A1975E0350039D2CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED7B1975E0350039D2CC /* TSCircleViewExampleTests-Info.plist */,
+				1262ED7C1975E0350039D2CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1262ED8C1975E0AD0039D2CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED8D1975E0B60039D2CC /* TSCircleView.h */,
+				1262ED8E1975E0B60039D2CC /* TSCircleView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1262ED901975E0BB0039D2CC /* Subclassing example */ = {
+			isa = PBXGroup;
+			children = (
+				1262ED911975E0C80039D2CC /* CircleView.h */,
+				1262ED921975E0C80039D2CC /* CircleView.m */,
+				1262ED931975E0C80039D2CC /* TSCustomCircleView.h */,
+				1262ED941975E0C80039D2CC /* TSCustomCircleView.m */,
+			);
+			name = "Subclassing example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1262ED501975E0350039D2CC /* TSCircleViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1262ED831975E0350039D2CC /* Build configuration list for PBXNativeTarget "TSCircleViewExample" */;
+			buildPhases = (
+				1262ED4D1975E0350039D2CC /* Sources */,
+				1262ED4E1975E0350039D2CC /* Frameworks */,
+				1262ED4F1975E0350039D2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSCircleViewExample;
+			productName = TSCircleViewExample;
+			productReference = 1262ED511975E0350039D2CC /* TSCircleViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1262ED711975E0350039D2CC /* TSCircleViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1262ED861975E0350039D2CC /* Build configuration list for PBXNativeTarget "TSCircleViewExampleTests" */;
+			buildPhases = (
+				1262ED6E1975E0350039D2CC /* Sources */,
+				1262ED6F1975E0350039D2CC /* Frameworks */,
+				1262ED701975E0350039D2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1262ED781975E0350039D2CC /* PBXTargetDependency */,
+			);
+			name = TSCircleViewExampleTests;
+			productName = TSCircleViewExampleTests;
+			productReference = 1262ED721975E0350039D2CC /* TSCircleViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1262ED491975E0350039D2CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tomasz Szulc";
+				TargetAttributes = {
+					1262ED711975E0350039D2CC = {
+						TestTargetID = 1262ED501975E0350039D2CC;
+					};
+				};
+			};
+			buildConfigurationList = 1262ED4C1975E0350039D2CC /* Build configuration list for PBXProject "TSCircleViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1262ED481975E0350039D2CC;
+			productRefGroup = 1262ED521975E0350039D2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1262ED501975E0350039D2CC /* TSCircleViewExample */,
+				1262ED711975E0350039D2CC /* TSCircleViewExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1262ED4F1975E0350039D2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED9C1975E1470039D2CC /* Main.storyboard in Resources */,
+				1262ED6D1975E0350039D2CC /* Images.xcassets in Resources */,
+				1262ED5F1975E0350039D2CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1262ED701975E0350039D2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED7E1975E0350039D2CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1262ED4D1975E0350039D2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED6B1975E0350039D2CC /* ViewController.m in Sources */,
+				1262ED8F1975E0B60039D2CC /* TSCircleView.m in Sources */,
+				1262ED951975E0C80039D2CC /* CircleView.m in Sources */,
+				1262ED651975E0350039D2CC /* AppDelegate.m in Sources */,
+				1262ED8B1975E0A60039D2CC /* Annotation.m in Sources */,
+				1262ED611975E0350039D2CC /* main.m in Sources */,
+				1262ED961975E0C80039D2CC /* TSCustomCircleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1262ED6E1975E0350039D2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1262ED801975E0350039D2CC /* TSCircleViewExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1262ED781975E0350039D2CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1262ED501975E0350039D2CC /* TSCircleViewExample */;
+			targetProxy = 1262ED771975E0350039D2CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1262ED5D1975E0350039D2CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1262ED5E1975E0350039D2CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1262ED7C1975E0350039D2CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1262ED7D1975E0350039D2CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1262ED9A1975E1470039D2CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1262ED9B1975E1470039D2CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1262ED811975E0350039D2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1262ED821975E0350039D2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1262ED841975E0350039D2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSCircleViewExample/TSCircleViewExample-Prefix.pch";
+				INFOPLIST_FILE = "TSCircleViewExample/TSCircleViewExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1262ED851975E0350039D2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSCircleViewExample/TSCircleViewExample-Prefix.pch";
+				INFOPLIST_FILE = "TSCircleViewExample/TSCircleViewExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1262ED871975E0350039D2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TSCircleViewExample.app/TSCircleViewExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSCircleViewExample/TSCircleViewExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TSCircleViewExampleTests/TSCircleViewExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1262ED881975E0350039D2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TSCircleViewExample.app/TSCircleViewExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSCircleViewExample/TSCircleViewExample-Prefix.pch";
+				INFOPLIST_FILE = "TSCircleViewExampleTests/TSCircleViewExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1262ED4C1975E0350039D2CC /* Build configuration list for PBXProject "TSCircleViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1262ED811975E0350039D2CC /* Debug */,
+				1262ED821975E0350039D2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1262ED831975E0350039D2CC /* Build configuration list for PBXNativeTarget "TSCircleViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1262ED841975E0350039D2CC /* Debug */,
+				1262ED851975E0350039D2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1262ED861975E0350039D2CC /* Build configuration list for PBXNativeTarget "TSCircleViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1262ED871975E0350039D2CC /* Debug */,
+				1262ED881975E0350039D2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1262ED491975E0350039D2CC /* Project object */;
+}
