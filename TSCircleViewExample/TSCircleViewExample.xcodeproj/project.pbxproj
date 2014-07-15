@@ -21,10 +21,10 @@
 		1262ED7E1975E0350039D2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED7C1975E0350039D2CC /* InfoPlist.strings */; };
 		1262ED801975E0350039D2CC /* TSCircleViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED7F1975E0350039D2CC /* TSCircleViewExampleTests.m */; };
 		1262ED8B1975E0A60039D2CC /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED8A1975E0A60039D2CC /* Annotation.m */; };
-		1262ED8F1975E0B60039D2CC /* TSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED8E1975E0B60039D2CC /* TSCircleView.m */; };
 		1262ED951975E0C80039D2CC /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED921975E0C80039D2CC /* CircleView.m */; };
 		1262ED961975E0C80039D2CC /* TSCustomCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED941975E0C80039D2CC /* TSCustomCircleView.m */; };
 		1262ED9C1975E1470039D2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1262ED9A1975E1470039D2CC /* Main.storyboard */; };
+		1262ED9F1975E3C10039D2CC /* TSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1262ED9E1975E3C10039D2CC /* TSCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +58,13 @@
 		1262ED7F1975E0350039D2CC /* TSCircleViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCircleViewExampleTests.m; sourceTree = "<group>"; };
 		1262ED891975E0A60039D2CC /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		1262ED8A1975E0A60039D2CC /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
-		1262ED8D1975E0B60039D2CC /* TSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCircleView.h; path = Classes/TSCircleView.h; sourceTree = "<group>"; };
-		1262ED8E1975E0B60039D2CC /* TSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCircleView.m; path = Classes/TSCircleView.m; sourceTree = "<group>"; };
 		1262ED911975E0C80039D2CC /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleView.h; path = "Subclassing example/CircleView.h"; sourceTree = "<group>"; };
 		1262ED921975E0C80039D2CC /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleView.m; path = "Subclassing example/CircleView.m"; sourceTree = "<group>"; };
 		1262ED931975E0C80039D2CC /* TSCustomCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCustomCircleView.h; path = "Subclassing example/TSCustomCircleView.h"; sourceTree = "<group>"; };
 		1262ED941975E0C80039D2CC /* TSCustomCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCustomCircleView.m; path = "Subclassing example/TSCustomCircleView.m"; sourceTree = "<group>"; };
 		1262ED9B1975E1470039D2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1262ED9D1975E3C10039D2CC /* TSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCircleView.h; sourceTree = "<group>"; };
+		1262ED9E1975E3C10039D2CC /* TSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +171,8 @@
 		1262ED8C1975E0AD0039D2CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1262ED8D1975E0B60039D2CC /* TSCircleView.h */,
-				1262ED8E1975E0B60039D2CC /* TSCircleView.m */,
+				1262ED9D1975E3C10039D2CC /* TSCircleView.h */,
+				1262ED9E1975E3C10039D2CC /* TSCircleView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -286,10 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1262ED6B1975E0350039D2CC /* ViewController.m in Sources */,
-				1262ED8F1975E0B60039D2CC /* TSCircleView.m in Sources */,
 				1262ED951975E0C80039D2CC /* CircleView.m in Sources */,
 				1262ED651975E0350039D2CC /* AppDelegate.m in Sources */,
 				1262ED8B1975E0A60039D2CC /* Annotation.m in Sources */,
+				1262ED9F1975E3C10039D2CC /* TSCircleView.m in Sources */,
 				1262ED611975E0350039D2CC /* main.m in Sources */,
 				1262ED961975E0C80039D2CC /* TSCustomCircleView.m in Sources */,
 			);
