@@ -22,6 +22,8 @@ API
 =======
 `radius` property allows to set radius of a circle. After setting this you're responsible to call `setNeedsDisplay` on this view because calling this is a costly operation and it's doin on main thread consider to calculate and cache your background view if possible.
 
+`coordinate` property allows to set coordinate of a circle. Also as after changing `radius` you have to call `setNeedsDisplay`.
+
 `shouldShowBackgroundViewOnStop` specifies if `backgroundView` should be visible when view is not animating. Default is set to NO.
 
 ### Subclassing
