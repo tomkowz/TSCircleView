@@ -16,6 +16,7 @@
         _radius = circle.radius;
         _animating = NO;
         _paused = NO;
+        _coordinate = circle.coordinate;
         self.shouldShowBackgroundViewOnStop = NO;
         [self addSubview:self.backgroundView];
     }
@@ -126,10 +127,10 @@
 
 #pragma mark - Drawing
 - (void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)ctx {
-    MKMapPoint circleCenter = MKMapPointForCoordinate([[self overlay] coordinate]);
+    MKMapPoint circleCenter = MKMapPointForCoordinate(self.coordinate);
     
     double radius = self.radius;
-    double mapRadius = radius * MKMapPointsPerMeterAtLatitude([[self overlay] coordinate].latitude);
+    double mapRadius = radius * MKMapPointsPerMeterAtLatitude(self.coordinate.latitude);
     
     /// calculate rect on map
     MKMapRect recalculatedRect = MKMapRectMake(circleCenter.x - mapRadius, circleCenter.y - mapRadius, mapRadius * 2, mapRadius * 2);

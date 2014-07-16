@@ -16,6 +16,11 @@
 @property (nonatomic, assign) CLLocationDistance radius;
 
 /**
+ Spciefies coordinate of circle view.
+ */
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+
+/**
  Specifies if `backgroundView` should be visible when animation is stopped. Default to NO.
  */
 @property (nonatomic, assign) BOOL shouldShowBackgroundViewOnStop;
