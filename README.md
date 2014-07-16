@@ -10,6 +10,13 @@ There is no easy way to use system *MKCircle* and draw it inside *MKCircleView* 
 
 The subclass gives the ability to create animatable and resizable circle on map which respects zooming on map. You can change radius and you can start, stop, pause, and resume animation of this view, so... its more powerful than system's one.
 
+Donate
+=========
+If you like it... :)
+
+<a href="https://flattr.com/submit/auto?user_id=tomkowz&url=http%3A%2F%2Fgithub.com%2Ftomkowz%2FTSCircleView" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
+
+
 API
 =======
 The API is simple
