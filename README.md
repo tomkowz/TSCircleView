@@ -3,6 +3,8 @@ TSCircleView
 
 It's a subclass of *MKCircleView* which supports scaling and animating.
 
+See demo [tscircleview.gif](https://raw.githubusercontent.com/tomkowz/TSCircleView/master/tscircleview.gif).
+
 
 There is no easy way to use system *MKCircle* and draw it inside *MKCircleView* and have ability to change its radius or to animate this view. If you want to do so only one way is to make subclass of *MKCircleView* and override `- (void)drawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale inContext:(CGContextRef)ctx` method.
 
