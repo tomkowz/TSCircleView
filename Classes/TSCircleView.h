@@ -16,6 +16,11 @@
 @property (nonatomic, assign) CLLocationDistance radius;
 
 /**
+ Specifies if `backgroundView` should be visible when animation is stopped. Default to NO.
+ */
+@property (nonatomic, assign) BOOL shouldShowBackgroundViewOnStop;
+
+/**
  Specifies if view is animating.
  */
 @property (nonatomic, readonly, getter = isAnimating) BOOL animating;
@@ -24,11 +29,6 @@
  Specifies if view is paused.
  */
 @property (nonatomic, readonly, getter = isPaused) BOOL paused;
-
-/**
- Specifies if `backgroundView` should be visible when animation is stopped. Default to NO.
- */
-@property (nonatomic, assign) BOOL shouldShowBackgroundViewOnStop;
 
 /**
  A background view. Use to subclass.
