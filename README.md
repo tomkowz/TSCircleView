@@ -20,8 +20,6 @@ Or donate by paypal *szulc.tomasz@o2.pl*.
 
 API
 =======
-The API is simple
-
 `radius` property allows to set radius of a circle. After setting this you're responsible to call `setNeedsDisplay` on this view because calling this is a costly operation and it's doin on main thread consider to calculate and cache your background view if possible.
 
 `shouldShowBackgroundViewOnStop` specifies if `backgroundView` should be visible when view is not animating. Default is set to NO.
