@@ -14,8 +14,6 @@
     self = [super initWithCircle:circle];
     if (self) {
         _radius = circle.radius;
-        _duration = 0.8;
-        _repeatCount = HUGE_VALF;
         _animating = NO;
         _paused = NO;
         self.shouldShowBackgroundViewOnStop = NO;
@@ -31,7 +29,7 @@
     
     [self _removeAnimation];
     [self.backgroundView setHidden:NO];
-    [self.backgroundView.layer addAnimation:[self animation] forKey:@"animation"];
+    [self.backgroundView.layer addAnimation:self.animation forKey:@"animation"];
     _animating = YES;
     _paused = NO;
 }
@@ -84,29 +82,37 @@
     [self.backgroundView setHidden:!_shouldShowBackgroundViewOnStop];
 }
 
+@synthesize animation = _animation;
 - (id)animation {
-    /// animate opacity
-    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    opacityAnimation.duration = self.duration;
-    opacityAnimation.repeatCount = self.repeatCount;
-    opacityAnimation.fromValue = [NSNumber numberWithFloat:1.0];
-    opacityAnimation.toValue = [NSNumber numberWithFloat:0.025];
+    if (!_animation) {
+        static CGFloat const duration = 0.8;
+        static CGFloat const repeatCount = HUGE_VALF;
+        
+        /// animate opacity
+        CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        opacityAnimation.duration = duration;
+        opacityAnimation.repeatCount = repeatCount;
+        opacityAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+        opacityAnimation.toValue = [NSNumber numberWithFloat:0.025];
 
-    /// animate resizing
-    CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    transformAnimation.duration = self.duration;
-    transformAnimation.repeatCount = self.repeatCount;
-    transformAnimation.fromValue = [NSNumber numberWithFloat:0.6];
-    transformAnimation.toValue = [NSNumber numberWithFloat:1.1];
+        /// animate resizing
+        CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        transformAnimation.duration = duration;
+        transformAnimation.repeatCount = repeatCount;
+        transformAnimation.fromValue = [NSNumber numberWithFloat:0.6];
+        transformAnimation.toValue = [NSNumber numberWithFloat:1.1];
+        
+        /// group them
+        CAAnimationGroup *group = [CAAnimationGroup animation];
+        
+        [group setAnimations:@[opacityAnimation, transformAnimation]];
+        group.duration = duration;
+        group.repeatCount = repeatCount;
+        
+        _animation = group;
+    }
     
-    /// group them
-    CAAnimationGroup *group = [CAAnimationGroup animation];
-    
-    [group setAnimations:@[opacityAnimation, transformAnimation]];
-    group.duration = self.duration;
-    group.repeatCount = self.repeatCount;
-    
-    return group;
+    return _animation;
 }
 
 @synthesize backgroundView = _backgroundView;

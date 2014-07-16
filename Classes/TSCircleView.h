@@ -16,16 +16,6 @@
 @property (nonatomic, assign) CLLocationDistance radius;
 
 /**
- Animation duration. Default to 0.8;
- */
-@property (nonatomic, assign) CGFloat duration;
-
-/**
- Animation repeat count. Default to `HUGE_VALF` (inifinte)
- */
-@property (nonatomic, assign) CGFloat repeatCount;
-
-/**
  Specifies if view is animating.
  */
 @property (nonatomic, readonly, getter = isAnimating) BOOL animating;
