@@ -12,10 +12,11 @@ The subclass gives the ability to create animatable and resizable circle on map 
 
 Donate
 =========
-If you like it... :)
+Flattr this if you like... :)
 
 <a href="https://flattr.com/submit/auto?user_id=tomkowz&url=http%3A%2F%2Fgithub.com%2Ftomkowz%2FTSCircleView" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 
+Or donate by paypal *szulc.tomasz@o2.pl*.
 
 API
 =======
