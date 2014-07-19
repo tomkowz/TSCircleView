@@ -17,6 +17,7 @@
         _animating = NO;
         _paused = NO;
         _coordinate = circle.coordinate;
+        
         self.shouldShowBackgroundViewOnStop = NO;
         [self addSubview:self.backgroundView];
     }
@@ -140,17 +141,17 @@
     
     @synchronized(self) {
         if(self.backgroundView) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                /// call setNeedsDisplay only when rect of backgroundView is changing from CGRectZero to different
-                BOOL shouldCallNeedsDisplay = NO;
-                if (CGRectEqualToRect(self.backgroundView.frame, CGRectZero)) {
-                    shouldCallNeedsDisplay = YES;
-                }
-                self.backgroundView.frame = rect;
-                if (shouldCallNeedsDisplay) {
+            /// call setNeedsDisplay only when rect of backgroundView is changing from CGRectZero to different
+            BOOL shouldCallNeedsDisplay = NO;
+            if (CGRectEqualToRect(self.backgroundView.frame, CGRectZero)) {
+                shouldCallNeedsDisplay = YES;
+            }
+            self.backgroundView.frame = rect;
+            if (shouldCallNeedsDisplay) {
+                dispatch_async(dispatch_get_main_queue(), ^{
                     [self.backgroundView setNeedsDisplay];
-                }
-            });
+                });
+            }
         }
     }
 }
