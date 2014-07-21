@@ -140,19 +140,20 @@
     CGRect rect = [self rectForMapRect:recalculatedRect];
     
     @synchronized(self) {
-        if(self.backgroundView) {
-            /// call setNeedsDisplay only when rect of backgroundView is changing from CGRectZero to different
-            BOOL shouldCallNeedsDisplay = NO;
-            if (CGRectEqualToRect(self.backgroundView.frame, CGRectZero)) {
-                shouldCallNeedsDisplay = YES;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(self.backgroundView) {
+                /// call setNeedsDisplay only when rect of backgroundView is changing from CGRectZero to different
+                BOOL shouldCallNeedsDisplay = NO;
+                if (CGRectEqualToRect(self.backgroundView.frame, CGRectZero)) {
+                    shouldCallNeedsDisplay = YES;
+                }
+                self.backgroundView.frame = rect;
+                if (shouldCallNeedsDisplay) {
+                        [self.backgroundView setNeedsDisplay];
+                }
             }
-            self.backgroundView.frame = rect;
-            if (shouldCallNeedsDisplay) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.backgroundView setNeedsDisplay];
-                });
-            }
-        }
+        });
+
     }
 }
 
